@@ -68,7 +68,7 @@ export const Component = {
     }`
 
     return html`<div>
-      <span id="label" innerHTML="${value}"></span>
+      <span id="label" innerHTML="${formatLabel(label, value, percent, chan, cc)}"></span>
       <button id="dec" onmousedown="${eventPressed}" ontouchstart="${eventPressed}">-1</button>
       <button id="inc" onmousedown="${eventPressed}" ontouchstart="${eventPressed}">+1</button>
     </div>`.style(css, newStyle)
